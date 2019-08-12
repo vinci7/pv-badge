@@ -28,7 +28,7 @@ go run main.go
 ## Usage
 
 
-[![Total Visits](https://pv-badge.herokuapp.com/total.svg/vinci7.pv-badge)](https://github.com/vinci7/pv-badge)
+[![Total Visits](https://pv-badge.herokuapp.com/total.svg?repo_id=vinci7.pv-badge)](https://github.com/vinci7/pv-badge)
 
 ## Author
 
