@@ -1,0 +1,12 @@
+
+
+# fill up your leancloud id and key
+XLcId = "YOUR-LEANCLOUD-ID"
+XLcKey = "YOUR-LEANCLOUD-KEY"
+contentType = "application/json"
+
+# fill up your first 8 chars of leancloud appid
+# see more: https://us.leancloud.cn/docs/rest_api.html#hash-1722650509
+totalPvUrl = "https://appid--------.api.lncldglobal.com/1.1/classes/total_pv"
+todayPvUrl = "https://appid--------.api.lncldglobal.com/1.1/classes/today_pv"
+
