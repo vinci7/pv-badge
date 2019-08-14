@@ -15,6 +15,7 @@ import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 	. "github.com/vinci7/pv-badge/conf"
+	"time"
 )
 
 
@@ -124,9 +125,11 @@ func totalSvc(c echo.Context) error {
 		log.Fatal(err)
 	}
 
+	tenMinsBefore := time.Now().UTC().Add((-10)*time.Minute).Format("Mon, 02 Jan 2006 15:04:05 GMT")
+
 	c.Response().Header().Set("Cache-Control", "no-cache,max-age=0")
 	// set a expired date to unable cache
-	c.Response().Header().Set("Expires", "Mon, 12 Aug 2019 14:09:23 GMT")
+	c.Response().Header().Set("Expires", tenMinsBefore)
 	return c.Stream(http.StatusOK, "image/svg+xml", &buf)
 }
 
@@ -145,6 +148,7 @@ func todaySvc(c echo.Context) error {
 	}
 
 
+	time.Now().Add((-10)*time.Minute).In()
 	c.Response().Header().Set("Cache-Control", "no-cache,max-age=0")
 	c.Response().Header().Set("Expires", "Mon, 12 Aug 2019 14:09:23 GMT")
 	return c.Stream(http.StatusOK, "image/svg+xml", &buf)
