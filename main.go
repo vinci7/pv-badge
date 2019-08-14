@@ -128,7 +128,6 @@ func totalSvc(c echo.Context) error {
 	tenMinsBefore := time.Now().UTC().Add((-10)*time.Minute).Format("Mon, 02 Jan 2006 15:04:05 GMT")
 
 	c.Response().Header().Set("Cache-Control", "no-cache,max-age=0")
-	// set a expired date to unable cache
 	c.Response().Header().Set("Expires", tenMinsBefore)
 	return c.Stream(http.StatusOK, "image/svg+xml", &buf)
 }
