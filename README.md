@@ -36,10 +36,9 @@ go run main.go
 
     <img alt="usage" src="https://pv-badge.herokuapp.com/total.svg?repo_id=vinci7-pv-badge"/>
 
-    
-![Total Visits](https://pv-badge.herokuapp.com/total.svg?repo_id=vinci7-pv-badge)
-
 Then, replace the repo_id attribute by yours, the recommended pattern is {yourNickname}-{yourRepoName} 
+
+![Total Visits](https://pv-badge.herokuapp.com/total.svg?repo_id=vinci7-pv-badge)
 
 👆refresh the page and see it again
 
