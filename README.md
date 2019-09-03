@@ -39,6 +39,7 @@ go run main.go
     
 ![Total Visits](https://pv-badge.herokuapp.com/total.svg?repo_id=vinci7-pv-badge)
 
+Then, replace the repo_id attribute by yours, the recommended pattern is {yourNickname}-{yourRepoName} 
 
 👆refresh the page and see it again
 
