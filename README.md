@@ -27,8 +27,18 @@ go run main.go
 
 ## Usage
 
+`markdown`
 
+    ![Total Visits](https://pv-badge.herokuapp.com/total.svg?repo_id=vinci7-pv-badge)
+    
+    
+`HTML`
+
+    <img alt="usage" src="https://pv-badge.herokuapp.com/total.svg?repo_id=vinci7-pv-badge"/>
+
+    
 ![Total Visits](https://pv-badge.herokuapp.com/total.svg?repo_id=vinci7-pv-badge)
+
 
 👆refresh the page and see it again
 
@@ -56,3 +66,5 @@ This Project is inspired by [visitor-count-badge](https://github.com/jwenjian/vi
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
 
  
+
+
